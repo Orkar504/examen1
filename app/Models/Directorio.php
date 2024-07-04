@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Directorio extends Model
 {
     use HasFactory;
+
+    protected $primaryKey ='codigoEntrada';
+
+    public $timestamps = false;
 }
