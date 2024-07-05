@@ -55,7 +55,7 @@
                                    
 
                                     <p>
-                                        <button class="btn btn-primary">Agregar nuevo contacto</button>
+                                        <button href= {{'contacto.entrada.nueva'}} class="btn btn-primary">Agregar nuevo contacto</button>
                                         <a href={{route('dir')}} class="btn btn-info">Regresar</a>
                                     </p>
 

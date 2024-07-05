@@ -73,4 +73,6 @@ class directorioController extends Controller
         echo "destruir";
     }
 
+    
+
 }

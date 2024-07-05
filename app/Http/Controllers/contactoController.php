@@ -11,7 +11,7 @@ class contactoController extends Controller
 {
     public function crearContacto(Request $request)
     {
-        
+        return view('agregarcontacto');
 
     }
 
