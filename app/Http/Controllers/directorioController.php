@@ -18,14 +18,20 @@ class directorioController extends Controller
         $entrada->correo = $request->correo;
         $entrada->telefono = $request->telefono;
 
-        echo $entrada;
+        $entrada->save();
+
+        return redirect('directorio');
+      
+
     }
 
     public function buscarEntrada(Request $request)
     {
         $param = $request->correo;
 
-        $entradaArray = Directorio::where('correo',$param);
+        $correo = Directorio::where('correo',$param);
+
+        return view('vercontactos',compact('correo'));
 
         
     }

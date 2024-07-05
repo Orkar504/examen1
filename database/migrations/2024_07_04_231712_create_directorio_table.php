@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('directorio', function (Blueprint $table) {
+        Schema::create('directorios', function (Blueprint $table) {
             $table->string('codigoEntrada')->primaryKey();
             $table->string('nombre');
             $table->string('apellido');
