@@ -27,9 +27,9 @@ class directorioController extends Controller
 
     public function buscarEntrada(Request $request)
     {
-        $param = $request->correo;
+        $correo = $request->correo;
 
-        $correo = Directorio::where('correo',$param);
+        $directorios = Directorio::where('correo',$correo);
 
         return view('vercontactos',compact('correo'));
 

@@ -43,16 +43,19 @@
                             <h3 class="card-header">Lista de contactos</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <label for="">C&oacute;digo</label>
+                                    @foreach ($directorios as $directorio)
+                                    <label for="">{{$directorio->codigo}}</label>
                                     <input type="text" class="form-control" readonly>
-                                    <label for="">Nombre</label>
+                                    <label for="">{{$directorio->nombre}}</label>
                                     <input type="text" class="form-control" readonly>
-                                    <label for="">Apellido</label>
+                                    <label for="">{{$directorio->Apellido}}</label>
                                     <input type="text" class="form-control" readonly>
+                                    @endforeach
+                                  
 
                                     <p>
                                         <button class="btn btn-primary">Agregar nuevo contacto</button>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <a href={{route('dir')}} class="btn btn-info">Regresar</a>
                                     </p>
 
                                     <table class="table">
