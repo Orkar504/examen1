@@ -9,19 +9,20 @@ Route::get('/', function () {
 });
 
 
-Route::get('/directorio', [directorioController::class,'verDirectorio']);
+Route::get('/directorio',[directorioController::class,'verDirectorio'])
+->name('dir');
+
+
 
 //Botones
 Route::get('/directorio/entrada', [directorioController::class,'verEntrada'])
-->name('dir.ver.nuevo');
+->name('dir.ver.entrada');
 
 Route::get('/directorio/eliminar', [directorioController::class,'verEliminar'])
 ->name('dir.ver.eliminar');
 
-Route::get('/directorio/eliminar/no', [directorioController::class,'verDirectorio'])
-->name('dir.ver.eliminar.no');
 
-Route::get('/directorio/eliminar/si', [directorioController::class,'verDirectorio'])
+Route::get('/directorio/eliminar/si', [directorioController::class,'destruir'])
 ->name('dir.ver.eliminar.si');
 
 Route::get('/directorio/contactos', [directorioController::class,'vercontactos'])

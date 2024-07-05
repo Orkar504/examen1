@@ -43,8 +43,8 @@
         
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</a>          
-          <a href="#" class="btn btn-danger" data-bs-dismiss="modal">Confirmar</a>          
+          <a href={{route('dir')}} class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</a>          
+          <a href={{route('dir.ver.eliminar.si')}} class="btn btn-danger" data-bs-dismiss="modal">Confirmar</a>          
         </div>
       </div>
     </div>

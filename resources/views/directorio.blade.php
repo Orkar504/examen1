@@ -18,8 +18,8 @@
                 <div class="p-6">
 
                 <p>
-                    <a href="#" class="btn btn-primary">Agregar nuevo</a>
-                    <a href="#" class="btn btn-success">Buscar</a>
+                    <a href={{route('dir.ver.entrada')}} class="btn btn-primary">Agregar nuevo</a>
+                    <a href={{route('dir.ver.buscar')}} class="btn btn-success">Buscar</a>
                 </p>
 
                 <table class="table">
@@ -38,10 +38,10 @@
                                 <td>Cortez</td>
                                 <td>9999</td>
                                 <td>
-                                    <a href="#" class="btn btn-info">Ver</a>
+                                    <a href={{route('dir.ver.contactos')}} class="btn btn-info">Ver</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="btn btn-danger">Eliminar</a>
+                                    <a href= {{route('dir.ver.eliminar')}} class="btn btn-danger">Eliminar</a>
                                 </td>
                             </tr>
                     </tbody>

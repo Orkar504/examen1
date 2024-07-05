@@ -34,6 +34,7 @@ class directorioController extends Controller
     public function destruir()
     {
         //destruir el registro
+        echo "destruir";
     }
 
 
