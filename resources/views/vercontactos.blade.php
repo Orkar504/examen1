@@ -44,12 +44,14 @@
                             <div class="card-body">
                                 <p class="card-text">
                                     @foreach ($directorios as $directorio)
+
                                     <label for="">{{$directorio->codigoEntrada}}</label>
                                     <input type="text" class="form-control" readonly>
                                     <label for="">{{$directorio->nombre}}</label>
                                     <input type="text" class="form-control" readonly>
                                     <label for="">{{$directorio->Apellido}}</label>
                                     <input type="text" class="form-control" readonly>
+                                    
                                     @endforeach
                                   
 
