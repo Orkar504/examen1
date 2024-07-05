@@ -31,7 +31,7 @@ class directorioController extends Controller
 
         $directorios = Directorio::where('correo',$correo);
 
-        return view('vercontactos',compact('correo'));
+        return view('vercontactos',compact('directorios'));
 
         
     }
