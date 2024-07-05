@@ -43,21 +43,22 @@
                             <h3 class="card-header">Crear Nueva Entrada Directorio</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <form>
+                                    <form action={{route('dir.entrada.nueva')}} method="POST">
+                                        @csrf
                                         <label for="">C&oacute;digo</label>
-                                        <input type="text" name="codigo" class="form-control">
+                                        <input type="text" id="codigo" name="codigo" class="form-control">
                                         <label for="">Nombre</label>
-                                        <input type="text" name="nombre" class="form-control">
+                                        <input type="text" id="nombre" name="nombre" class="form-control">
                                         <label for="">Apellido</label>
-                                        <input type="text" name="apellido" class="form-control">
+                                        <input type="text" id="apellido" name="apellido" class="form-control">
                                         <label for="">Tel&eacute;fono</label>
-                                        <input type="text" name="telefono" class="form-control">
+                                        <input type="text" id="telefono" name="telefono" class="form-control">
                                         <label for="">Correo</label>
-                                        <input type="text" name="correo" class="form-control">
+                                        <input type="text" id="correo" name="correo" class="form-control">
                                         
                                         
-                                        <button class="btn btn-primary">Guardar</button>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <button class="btn btn-primary" type="submit">Guardar</button>
+                                        <a href={{route('dir')}} class="btn btn-info">Regresar</a>
                                         
                                     </form>
                                 </p>

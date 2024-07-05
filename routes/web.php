@@ -14,7 +14,7 @@ Route::get('/directorio',[directorioController::class,'verDirectorio'])
 
 
 
-//Botones
+//Botones de dir
 Route::get('/directorio/entrada', [directorioController::class,'verEntrada'])
 ->name('dir.ver.entrada');
 
@@ -30,4 +30,17 @@ Route::get('/directorio/contactos', [directorioController::class,'vercontactos']
 
 Route::get('/directorio/buscar', [directorioController::class,'verBuscar'])
 ->name('dir.ver.buscar');
+
+//botones de Nueva entrada directorio
+Route::post('/directorio/entrada/nueva', [directorioController::class,'addEntrada'])
+->name('dir.entrada.nueva');
+
+
+//Botones de buscar
+Route::post('/directorio/buscar/correo', [directorioController::class,'buscarEntrada'])
+->name('dir.buscar.correo');
+
+//Botones contacto
+Route::post('/directorio/contacto/nueva', [contactoController::class,'crearContacto'])
+->name('contacto.entrada.nueva');
 

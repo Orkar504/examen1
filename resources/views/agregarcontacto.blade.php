@@ -43,7 +43,7 @@
                             <h3 class="card-header">Agregar Contacto</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <form>
+                                    <form action={{}}>
                                         <label for="">C&oacute;digo de entrada</label>
                                         <input type="text" name="codigo" class="form-control" readonly>
                                         <label for="">Nombre</label>
