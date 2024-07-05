@@ -25,9 +25,13 @@ class contactoController extends Controller
 
     }
 
-    public function destroyContacto()
+    public function destroyContacto($id)
     {
-        
+        $contacto =  Contacto::find($id);
+
+        $contacto->delete();
+
+        return redirect ('/directorio');
     }
 
     

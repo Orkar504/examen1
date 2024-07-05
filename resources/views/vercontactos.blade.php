@@ -75,7 +75,7 @@
                                                     <td>{{$directorio->apellido}}</td>
                                                     <td>{{$directorio->telefono}}</td>                                                    
                                                     <td>
-                                                        <a href="#" class="btn btn-danger">Eliminar</a>
+                                                        <a href="" class="btn btn-danger">Eliminar</a>
                                                     </td>
                                                     @endforeach
                                                     

@@ -44,6 +44,8 @@ Route::post('/directorio/buscar/correo', [directorioController::class,'buscarEnt
 Route::post('/directorio/contacto/nueva', [contactoController::class,'crearContacto'])
 ->name('contacto.entrada.nueva');
 
+
+
 //Botones agregar nuevo contacto
 
 
