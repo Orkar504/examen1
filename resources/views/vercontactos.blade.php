@@ -43,17 +43,16 @@
                             <h3 class="card-header">Lista de contactos</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    @foreach ($directorios as $directorio)
-
-                                    <label for="">{{$directorio->codigoEntrada}}</label>
-                                    <input type="text" class="form-control" readonly>
-                                    <label for="">{{$directorio->nombre}}</label>
-                                    <input type="text" class="form-control" readonly>
-                                    <label for="">{{$directorio->Apellido}}</label>
-                                    <input type="text" class="form-control" readonly>
-                                    
-                                    @endforeach
                                   
+
+                                    <label for="">Codigo</label>
+                                    <input type="text" class="form-control" readonly>
+                                    <label for="">Nombre</label>
+                                    <input type="text" class="form-control" readonly>
+                                    <label for="">Apellido</label>
+                                    <input type="text" class="form-control" readonly>
+
+                                   
 
                                     <p>
                                         <button class="btn btn-primary">Agregar nuevo contacto</button>
@@ -70,13 +69,16 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                    <td>1</td>                                                    
-                                                    <td>Julio</td>
-                                                    <td>Cortez</td>
-                                                    <td>9999</td>                                                    
+                                                    @foreach ($directorios as $directorio)
+                                                    <td>{{$directorio->codigoEntrada}}</td>                                                    
+                                                    <td>{{$directorio->nombre}}</td>
+                                                    <td>{{$directorio->apellido}}</td>
+                                                    <td>{{$directorio->telefono}}</td>                                                    
                                                     <td>
                                                         <a href="#" class="btn btn-danger">Eliminar</a>
                                                     </td>
+                                                    @endforeach
+                                                    
                                                 </tr>
                                         </tbody>
 
